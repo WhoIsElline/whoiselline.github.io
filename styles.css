@@ -1,0 +1,16 @@
+button {
+  height: 40px;
+  background-color: #0b57cf;
+  border: none;
+  color: white;
+  padding: 0px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+button.text {
+  background-color: inherit;
+  color: #0b57cf;
+}
