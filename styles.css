@@ -1,14 +1,18 @@
 button {
   height: 40px;
   background-color: #0b57cf;
+  display: inline-flex;
   border: none;
   color: white;
-  padding: 0px 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   border-radius: 9999px;
+  transition: box-shadow 200ms, background-color 200ms;
 }
 button.text {
   background-color: inherit;
