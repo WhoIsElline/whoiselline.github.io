@@ -13,4 +13,5 @@ button {
 button.text {
   background-color: inherit;
   color: #0b57cf;
+  padding: 0px 12px;
 }
