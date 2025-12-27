@@ -1,6 +1,8 @@
-@font-face {
-	font-family: "ProductSans-Light";
-	src: url(./assets/font/product-sans/ProductSans-Light.ttf) format("truetype");
+body {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+	font-style: normal;
 }
 
 * {
@@ -17,7 +19,7 @@ html {
 .container {
 	display: flex;
 	background-color: #EAEFF9;
-	height: 25rem;
+	height: 24rem;
 	border-radius: 0 0 3rem 3rem;
 }
 
