@@ -14,14 +14,14 @@ html {
 	font-family: ProductSans-Light, sans-serif;
 }
 
-.display {
+.container {
 	display: flex;
 	background-color: #EAEFF9;
 	height: 25rem;
 	border-radius: 0 0 3rem 3rem;
 }
 
-.display #expressionField {
+.container #expressionField {
 	border: none;
 	outline: none;
 	background: none;
@@ -33,7 +33,7 @@ html {
 	caret-color: #85b2ff;
 }
 
-.display #expressionField::selection {
+.container #expressionField::selection {
 	background-color: #798DAF;
 }
 
