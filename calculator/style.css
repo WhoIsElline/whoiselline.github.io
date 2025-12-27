@@ -12,12 +12,11 @@
 html {
 	font-size: 62.5%; /* 1rem = 10px for easier caluculations */
 	font-family: ProductSans-Light, sans-serif;
-
 }
 
 .display {
 	display: flex;
-	background-color: #;
+	background-color: #EAEFF9;
 	height: 25rem;
 	border-radius: 0 0 3rem 3rem;
 }
@@ -26,7 +25,7 @@ html {
 	border: none;
 	outline: none;
 	background: none;
-	color: #E3E3E3;
+	color: #1F1F1F;
 	font-size: 9rem;
 	padding: 0 1rem;
 	width: 100%;
