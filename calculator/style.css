@@ -17,7 +17,7 @@ html {
 
 .display {
 	display: flex;
-	background-color: #42494c;
+	background-color: #;
 	height: 25rem;
 	border-radius: 0 0 3rem 3rem;
 }
@@ -46,8 +46,8 @@ html {
 }
 
 button {
-	background-color: #303336;
-	color: #E3E3E3;
+	background-color: #F7F9FC;
+	color: #444746;
 	flex: 0 0 22.5%; /* The same as using width: 22.5% */
 	font-size: 3rem;
 	padding: 2rem;
@@ -60,12 +60,12 @@ button {
 }
 
 button.equals {
-	background-color: #D3E3FD;
-  color: #001D35;
+  background-color: #D3E3FD;
+  color: #041E49;
 }
 
 button.operator {
-	background-color: #73bff2;
+	background-color: #C2E7FF;
 	color: #001D35;
 }
 
