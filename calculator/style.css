@@ -1,0 +1,101 @@
+@font-face {
+	font-family: "ProductSans-Light";
+	src: url(./assets/font/product-sans/ProductSans-Light.ttf) format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px for easier caluculations */
+	font-family: ProductSans-Light, sans-serif;
+
+}
+
+.display {
+	display: flex;
+	background-color: #42494c;
+	height: 25rem;
+	border-radius: 0 0 3rem 3rem;
+}
+
+.display #expressionField {
+	border: none;
+	outline: none;
+	background: none;
+	color: #E3E3E3;
+	font-size: 9rem;
+	padding: 0 1rem;
+	width: 100%;
+	text-align: right;
+	caret-color: #85b2ff;
+}
+
+.display #expressionField::selection {
+	background-color: #798DAF;
+}
+
+.button-group {
+	display: flex;
+	gap: 1.15rem;
+	margin: 5rem 1.3rem 0;
+	flex-wrap: wrap;
+}
+
+button {
+	background-color: #303336;
+	color: #E3E3E3;
+	flex: 0 0 22.5%; /* The same as using width: 22.5% */
+	font-size: 3rem;
+	padding: 2rem;
+	border-radius: 9999px;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	transition: border-radius 100ms ease, background-color 150ms ease;
+	outline: none;
+}
+
+button.equals {
+	background-color: #D3E3FD;
+  color: #001D35;
+}
+
+button.operator {
+	background-color: #73bff2;
+	color: #001D35;
+}
+
+.calculator .controls .delete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator .controls .delete svg {
+	pointer-events: none; /* allows the events to pass through to the underlying button */
+}
+
+button.clear {
+	background-color: #C4EED0;
+	color: #072711;
+}
+
+/* Buttons animation */
+
+.calculator .controls button.btn-radius {
+	border-radius: 2.5rem;
+}
+
+.calculator .controls button.btn-overlay::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: hsla(0, 0%, 100%, 0.15);
+}
