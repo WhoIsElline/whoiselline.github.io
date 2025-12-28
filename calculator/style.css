@@ -1,102 +1,128 @@
+html,
 body {
-  font-family: "Google Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-	font-style: normal;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Product Sans;
+  background-color: #fffef2;
+  touch-action: manipulation;
+}
+@font-face {
+  font-family: "Product Sans";
+  src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+    format("woff2");
 }
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 70%;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #cc0000;
 }
 
-html {
-	font-size: 62.5%; /* 1rem = 10px for easier caluculations */
-	font-family: ProductSans-Light, sans-serif;
+.AC-button,
+.operator-button,
+.digit-button,
+.backspace-button,
+.equal-button {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  margin: 5px;
+  background-color: #f7f6e5;
+  border-radius: 50px;
+  font-size: 2.5rem;
+  color: black;
+  cursor: pointer;
 }
 
-.container {
-	display: flex;
-	background-color: #EAEFF9;
-	height: 24rem;
-	border-radius: 0 0 3rem 3rem;
+.AC-button {
+  background-color: #92ffc2;
 }
 
-.container #expressionField {
-	border: none;
-	outline: none;
-	background: none;
-	color: #1F1F1F;
-	font-size: 9rem;
-	padding: 0 1rem;
-	width: 100%;
-	text-align: right;
-	caret-color: #85b2ff;
+.operator-button {
+  background-color: #eee8b7;
+  font-size: 3.2rem;
 }
 
-.container #expressionField::selection {
-	background-color: #798DAF;
+.equal-button {
+  background-color: #ffeb75;
+  font-size: 2.8rem;
 }
 
-.button-group {
-	display: flex;
-	gap: 1.15rem;
-	margin: 5rem 1.3rem 0;
-	flex-wrap: wrap;
+.input-field {
+  display: block;
+  width: 95%;
+  font-size: 4.5rem;
+  text-align: right;
+  background-color: hsla(0, 0%, 0%, 0);
+  border: none;
+  /* caret-color: yellow; */
+  outline: none;
+  height: 100%;
+  z-index: 100;
+  font-family: 'Product Sans';
 }
 
-button {
-	background-color: #F7F9FC;
-	color: #444746;
-	flex: 0 0 22.5%; /* The same as using width: 22.5% */
-	font-size: 3rem;
-	padding: 2rem;
-	border-radius: 9999px;
-	border: none;
-	position: relative;
-	overflow: hidden;
-	transition: border-radius 100ms ease, background-color 150ms ease;
-	outline: none;
+.input-div {
+  background-color: #ebe8d0;
+  display: grid;
+  width: 100%;
+  height: 30%;
+  align-items: center;
+  justify-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-button.equals {
-  background-color: #D3E3FD;
-  color: #041E49;
+.line {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 28%;
+  border-radius: 10px;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  justify-content: center;
+  text-align: center;
 }
 
-button.operator {
-	background-color: #C2E7FF;
-	color: #001D35;
+.backspace-button svg {
+    height: 35px;
+    width: 35px;
 }
 
-.calculator .controls .delete {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.calc-button {
+    -webkit-tap-highlight-color:  #ffffff00;
+    transition: border-radius 0.6s;
 }
 
-.calculator .controls .delete svg {
-	pointer-events: none; /* allows the events to pass through to the underlying button */
+.calc-button:active {
+    border-radius: 25px;
+    filter: brightness(90%);
 }
 
-button.clear {
-	background-color: #C4EED0;
-	color: #072711;
-}
+@media (min-width: 800px) {
+    .calc-button{
+        width: 65px;
+        height: 65px;
+        font-size: 2.0rem;
+    }
 
-/* Buttons animation */
-
-.calculator .controls button.btn-radius {
-	border-radius: 2.5rem;
-}
-
-.calculator .controls button.btn-overlay::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: hsla(0, 0%, 100%, 0.15);
+    .backspace-button svg {
+        height: 25px;
+        width: 25px;
+    }
 }
