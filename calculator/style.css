@@ -27,11 +27,7 @@ body {
   color: #cc0000;
 }
 
-.AC-button,
-.operator-button,
-.digit-button,
-.backspace-button,
-.equal-button {
+button {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -45,16 +41,16 @@ body {
   cursor: pointer;
 }
 
-.AC-button {
+button .clear {
   background-color: #92ffc2;
 }
 
-.operator-button {
+button .operator {
   background-color: #eee8b7;
   font-size: 3.2rem;
 }
 
-.equal-button {
+button .equal {
   background-color: #ffeb75;
   font-size: 2.8rem;
 }
