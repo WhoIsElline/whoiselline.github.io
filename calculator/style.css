@@ -4,7 +4,6 @@ body {
   width: 100%;
   margin: 0;
   font-family: Product Sans;
-  background-color: #fffef2;
   touch-action: manipulation;
 }
 @font-face {
@@ -24,7 +23,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #cc0000;
 }
 
 button {
@@ -36,23 +34,25 @@ button {
   margin: 5px;
   background-color: #f7f6e5;
   border-radius: 50px;
+  border: none;
   font-size: 2.5rem;
-  color: black;
+  color: ;
   cursor: pointer;
 }
 
 button .clear {
-  background-color: #92ffc2;
+  background-color: #C4EED0;
+  color: #072711;
 }
 
 button .operator {
-  background-color: #eee8b7;
-  font-size: 3.2rem;
+  background-color: #C2E7FF;
+  color: #001D35;
 }
 
 button .equal {
-  background-color: #ffeb75;
-  font-size: 2.8rem;
+  background-color: #D3E3FD;
+  color: #041E49;
 }
 
 .input-field {
