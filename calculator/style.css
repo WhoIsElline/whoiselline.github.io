@@ -69,8 +69,8 @@ button .equal {
   font-family: 'Product Sans';
 }
 
-.input-div {
-  background-color: #ebe8d0;
+.container {
+  background-color: #EAEFF9;
   display: grid;
   width: 100%;
   height: 30%;
